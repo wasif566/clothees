@@ -59,8 +59,20 @@
       </section>
     </main>
 
-<a id="whatsappContact" class="whatsapp-contact" href="#" role="button" aria-label="Contact us on WhatsApp" rel="noopener" target="_blank">
-  <img src="bodyimages/download.png" alt="WhatsApp" width="48" height="48" loading="lazy">
+<a id="whatsappContact" 
+   class="whatsapp-contact" 
+   href="https://wa.me/923148549885?text=Hello%2C%20I%27m%20interested%20to%20place%20an%20order.%20Please%20assist."
+   role="button" 
+   aria-label="Contact us on WhatsApp" 
+   rel="noopener" 
+   target="_blank">
+
+  <img src="bodyimages/download.png" 
+       alt="WhatsApp" 
+       width="48" 
+       height="48" 
+       loading="lazy">
+
   <span class="whatsapp-label">Contact us</span>
 </a>
 
@@ -176,7 +188,7 @@ function renderProductsToGrid(items, gridId){
       // navigate to product.html with id query parameter (preserve exact ID strings)
       const id = thumb.getAttribute('data-id') || titleEl.getAttribute('data-id');
       if(!id) return;
-      window.location.href = `/product.html?id=${encodeURIComponent(id)}`;
+      window.location.href = `product.html?id=${encodeURIComponent(id)}`;
     };
 
     thumb.addEventListener('click', openProd);
@@ -236,7 +248,7 @@ function loadUnstitched(){
 }
 
 // helpers for collection buttons
-function goToCollection(slug){ window.location.href = `/collections/${encodeURIComponent(slug)}`; }
+function goToCollection(slug){ window.location.href = `collections/${encodeURIComponent(slug)}`; }
 
 // init both grids
 document.addEventListener('DOMContentLoaded', ()=>{
